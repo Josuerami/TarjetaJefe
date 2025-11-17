@@ -67,21 +67,16 @@ body {
     100% { left: 160%; }
 }
 
-/* =============================== */
-/*        IMÁGENES CORREGIDAS       */
-/* =============================== */
-
 .left-box {
     width: 50%;
     display: flex;
     flex-direction: column;  
     align-items: center;    
     justify-content: flex-start;
-    gap: 20px;              
+    gap: 20px;
     padding-top: 10px;
 }
 
-/* Imágenes pequeñas */
 .malacate, .trompo {
     width: 40%;
     height: auto;
@@ -89,10 +84,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-
-/* =============================== */
-/*        TEXTO DERECHA            */
-/* =============================== */
 
 .right-box {
     width: 50%;
@@ -104,8 +95,6 @@ body {
     font-weight: 800;
     margin-bottom: 8px;
     color: #ff6600;
-    text-shadow: 1px 1px 2px #f8e8c0;
-    letter-spacing: 1.3px;
 }
 
 .subtitulo {
@@ -122,15 +111,25 @@ body {
     margin: 12px 0;
 }
 
-.seccion {
-    font-size: 17px;
-    line-height: 1.7;
+/* 🔥 NUEVO: Alineación perfecta de bullets */
+.lista {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 }
 
-.seccion i {
-    font-size: 20px;
+.lista li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 17px;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.icon {
+    width: 22px;
     margin-right: 6px;
-    color: #6b4a26;
+    text-align: center;
 }
 
 /* CONTACTO */
@@ -153,7 +152,6 @@ body {
     color: #3a240f;
 }
 
-/* ATN visible */
 .atn {
     font-size: 17px;
     font-weight: 700;
@@ -161,7 +159,6 @@ body {
     margin-top: 5px;
 }
 
-/* BOTONES */
 .boton {
     display: inline-block;
     padding: 12px 20px;
@@ -181,7 +178,6 @@ body {
     background: linear-gradient(135deg,#0d6efd,#0056b3);
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
     .card {
         width: 95%;
@@ -199,7 +195,6 @@ body {
     .malacate, .trompo { width: 60%; }
     .titulo { font-size: 24px; text-align: center; }
     .subtitulo { font-size: 14px; text-align: center; }
-    .seccion { font-size: 15px; text-align: center; }
     .contacto { justify-content: center; flex-wrap: wrap; gap: 10px; }
 }
 </style>
@@ -209,7 +204,7 @@ body {
 <div class="card">
     <div class="shine"></div>
 
-    <!-- IZQUIERDA: IMÁGENES -->
+    <!-- IZQUIERDA -->
     <div class="left-box">
         <img class="malacate" src="imagenMalacate2.png" alt="Malacate">
         <img class="trompo" src="imagenTrompo2.png" alt="Trompo">
@@ -223,17 +218,21 @@ body {
 
         <div class="line"></div>
 
-        <div class="seccion">
-            <i>🧱</i> Losas, pisos y trabes<br>
-            <i>🏗️</i> Cimentación <br>
-            <i>🔧</i> Trompo con malacate<br>
-            <i>⚙️</i> Colado de trabes <br>
-            <i>🧰</i> Vibrador<br>
-            <i>🔨</i> Rompedor para concreto<br>
-            <i>💃</i> Bailarina<br>
-            <i>🏗️</i> Malacate<br>
-            <i>📍</i> Cubrimos CDMX y área metropolitana
-        </div>
+        <!-- 🔥 LISTA PERFECTAMENTE ALINEADA -->
+        <ul class="lista">
+            <li><span class="icon">🧱</span>Losas, pisos y trabes</li>
+            <li><span class="icon">🏗</span>Cimentación</li>
+            <li><span class="icon">🔧</span>Trompo con malacate</li>
+            <li><span class="icon">⚙</span>Colado de trabes</li>
+
+            <!-- Tus bullets -->
+            <li><span class="icon">•</span>Vibrador</li>
+            <li><span class="icon">•</span>Rompedor para concreto</li>
+            <li><span class="icon">•</span>Bailarina</li>
+            <li><span class="icon">•</span>Malacate</li>
+
+            <li><span class="icon">📍</span>Cubrimos CDMX y área metropolitana</li>
+        </ul>
 
         <div class="line"></div>
 
