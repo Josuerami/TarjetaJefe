@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tarjeta Digital Horizontal – Obra Civil</title>
+<title>Tarjeta Digital Miguel Ramirez </title>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
@@ -61,8 +60,11 @@ body {
 }
 
 .malacate, .trompo {
-    width: 60px;
-    height: 60px;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .right-box {
@@ -169,7 +171,7 @@ body {
     .left-box {
         margin-bottom: 15px;
     }
-    .malacate, .trompo { width: 50px; height: 50px; }
+    .malacate, .trompo { width: 65%; }
     .titulo { font-size: 24px; text-align: center; }
     .subtitulo { font-size: 14px; text-align: center; }
     .contacto { justify-content: center; flex-wrap: wrap; gap: 10px; }
@@ -181,31 +183,21 @@ body {
 <div class="card">
 
     <div class="left-box">
-        <!-- Malacate SVG real -->
-        <svg class="malacate" viewBox="0 0 64 64" fill="#c7a878">
-            <circle cx="32" cy="32" r="30" stroke="#5a3c1e" stroke-width="4"/>
-            <circle cx="32" cy="32" r="12" fill="#5a3c1e"/>
-            <line x1="32" y1="20" x2="32" y2="44" stroke="#c7a878" stroke-width="2"/>
-            <line x1="20" y1="32" x2="44" y2="32" stroke="#c7a878" stroke-width="2"/>
-        </svg>
-
-        <!-- Trompo SVG real -->
-        <svg class="trompo" viewBox="0 0 64 64" fill="#c7a878">
-            <circle cx="32" cy="32" r="30" stroke="#5a3c1e" stroke-width="4"/>
-            <polygon points="32,8 40,32 32,56 24,32" fill="#5a3c1e"/>
-            <circle cx="32" cy="32" r="6" fill="#c7a878"/>
-        </svg>
+        <img class="malacate" src="imagenMalacate2.png" alt="Malacate">
+        <img class="trompo" src="imagenTrompo2.png" alt="Trompo">
     </div>
 
     <div class="right-box">
 
         <div class="titulo">SERVICIO PARA OBRA</div>
+         <div class="titulo">Contamos con todo lo que ocupes </div>
         <div class="subtitulo">Losas • Pisos • Trabes • Cimentación • Maquinaria</div>
 
         <div class="line"></div>
 
         <ul class="lista">
 
+            <!-- 🧱 LADRILLO -->
             <li>
                 <span class="icon">
                     <svg fill="#5a3c1e" viewBox="0 0 24 24">
@@ -218,6 +210,7 @@ body {
                 Losas, pisos y trabes
             </li>
 
+            <!-- 🏗 GRÚA -->
             <li>
                 <span class="icon">
                     <svg fill="#5a3c1e" viewBox="0 0 24 24">
@@ -227,6 +220,7 @@ body {
                 Cimentación
             </li>
 
+            <!-- 🔧 LLAVE -->
             <li>
                 <span class="icon">
                     <svg fill="#5a3c1e" viewBox="0 0 24 24">
@@ -236,6 +230,7 @@ body {
                 Trompo con malacate
             </li>
 
+            <!-- ⚙ ENGRANE -->
             <li>
                 <span class="icon">
                     <svg fill="#5a3c1e" viewBox="0 0 24 24">
@@ -245,6 +240,7 @@ body {
                 Colado de trabes
             </li>
 
+            <!-- 🔥 VIBRADOR -->
             <li>
                 <span class="icon">
                     <svg fill="#5a3c1e" viewBox="0 0 24 24">
@@ -254,6 +250,7 @@ body {
                 Vibrador
             </li>
 
+            <!-- 🔨 ROMPEDOR -->
             <li>
                 <span class="icon">
                     <svg fill="#5a3c1e" viewBox="0 0 24 24">
@@ -263,6 +260,7 @@ body {
                 Rompedor para concreto
             </li>
 
+            <!-- 🟫 BAILARINA (compactadora) -->
             <li>
                 <span class="icon">
                     <svg fill="#5a3c1e" viewBox="0 0 24 24">
@@ -272,6 +270,7 @@ body {
                 Bailarina compactadora
             </li>
 
+            <!-- 🧰 MALACATE -->
             <li>
                 <span class="icon">
                     <svg fill="#5a3c1e" viewBox="0 0 24 24">
@@ -282,6 +281,7 @@ body {
                 Malacate
             </li>
 
+            <!-- 📍 UBICACIÓN -->
             <li>
                 <span class="icon">
                     <svg fill="#d13f00" viewBox="0 0 24 24">
@@ -310,4 +310,4 @@ body {
 </div>
 
 </body>
-</html>
+</html>  
